@@ -2,6 +2,7 @@ spring和mybatis没搞出来，SpringMybatisExam就是那个未完成- -
 
 后面的testMybatis实现了一下功能：
 
+修改dbcongig
 
 mvn clean compile
 运行
