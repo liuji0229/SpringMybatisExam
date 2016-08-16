@@ -10,6 +10,8 @@
 
 	<select id="select" parameterType="com.hand.customer" resultType="com.hand.customer">
 		select * from customer where first_name=#{first_name} and last_name=#{last_name} and address_id=#{address_id}
-
 	</select>
+	<delete id="delete" parameterType="int">
+		delete from customer where customer_id=#{customer_id} 	
+	</delete>
 </mapper>

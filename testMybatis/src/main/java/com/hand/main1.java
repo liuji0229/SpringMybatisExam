@@ -58,6 +58,13 @@ public class main1 {
 			System.out.println("create_date: "+list.get(i).getCreate_date());
 			
 		}
+		
+		System.out.println("请输入需要删除的customer_id：");
+		int del=in.nextInt();
+		String statement3 = "com.hand.customerMapper.delete";
+		session.delete(statement3,del);
+		session.commit();
+		System.out.println("删除成功");
 	}
 
 }

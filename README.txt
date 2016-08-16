@@ -9,3 +9,5 @@ mvn clean compile
 mvn exec:java -Dexec.mainClass="com.hand.main1" -Dexec.args="arg0 arg1 arg2"
 
 提示插入成功并显示下一题的select信息
+
+根据提示， 输入需要删除的customer_id:
