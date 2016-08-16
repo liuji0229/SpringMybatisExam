@@ -33,5 +33,4 @@ public class test1 {
 		customerTest test=new customerTest();
 		test.save(1, first_name, last_name, address_id, create_date);
 	}
-
 }

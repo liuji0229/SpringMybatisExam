@@ -9,8 +9,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import Dao.customer;
 
+
+
 @RunWith(SpringJUnit4ClassRunner.class) //使用Springtest测试框架
-@ContextConfiguration("/beans.xml") 
+@ContextConfiguration("/spring-mybatis.xml") 
 
 public class customerTest {
 	@Autowired  //注入
