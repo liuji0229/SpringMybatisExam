@@ -7,4 +7,9 @@
 		values
 		(#{store_id},#{first_name},#{last_name},#{email},#{address_id},#{create_date})
 	</insert>
+
+	<select id="select" parameterType="com.hand.customer" resultType="com.hand.customer">
+		select * from customer where first_name=#{first_name} and last_name=#{last_name} and address_id=#{address_id}
+
+	</select>
 </mapper>

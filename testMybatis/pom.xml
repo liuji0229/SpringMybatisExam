@@ -14,23 +14,36 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-			<dependency>
-				<groupId>mysql</groupId>
-				<artifactId>mysql-connector-java</artifactId>
-				<version>5.1.38</version>
-			</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.38</version>
+		</dependency>
 
-			<dependency>
-				<groupId>org.mybatis</groupId>
-				<artifactId>mybatis</artifactId>
-				<version>3.2.8</version>
-			</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.2.8</version>
+		</dependency>
 
-			<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context</artifactId>
-				<version>4.3.2.RELEASE</version>
-			</dependency>
-		</dependencies>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+	</dependencies>
+	<properties>
+
+		<!-- 文件拷贝时的编码 -->
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<!-- 编译时的编码 -->
+
+		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+
+	</properties>
 </project>

@@ -6,6 +6,15 @@ import java.util.Date;
 
 public class customer {
 
+	private int customer_id;
+	private int store_id;
+	private String first_name;
+	private String last_name;
+	private String email;
+	private int address_id;
+	private int active;
+	private Date create_date;
+	private Date last_update;
 	public customer(int store_id, String first_name, String last_name,
 			String email, int address_id, Date create_date) {
 		super();
@@ -16,15 +25,28 @@ public class customer {
 		this.address_id = address_id;
 		this.create_date = create_date;
 	}
-	private int customer_id;
-	private int store_id;
-	private String first_name;
-	private String last_name;
-	private String email;
-	private int address_id;
-	private int active;
-	private Date create_date;
-	private Date last_update;
+	public customer(int customer_id, int store_id, String first_name,
+			String last_name, String email, int address_id, int active,
+			Date create_date, Date last_update) {
+		super();
+		this.customer_id = customer_id;
+		this.store_id = store_id;
+		this.first_name = first_name;
+		this.last_name = last_name;
+		this.email = email;
+		this.address_id = address_id;
+		this.active = active;
+		this.create_date = create_date;
+		this.last_update = last_update;
+	}
+	
+	
+	public customer(String first_name, String last_name, int address_id) {
+		super();
+		this.first_name = first_name;
+		this.last_name = last_name;
+		this.address_id = address_id;
+	}
 	public int getCustomer_id() {
 		return customer_id;
 	}
@@ -86,6 +108,10 @@ public class customer {
 				+ last_name + ", email=" + email + ", address_id=" + address_id
 				+ ", active=" + active + ", create_date=" + create_date
 				+ ", last_update=" + last_update + "]";
+	}
+	public customer() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 	
 	
